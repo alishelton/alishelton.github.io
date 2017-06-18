@@ -1,0 +1,156 @@
+/** Main CSS file for index.html on site. */
+
+/** Prevent 'over-scrolling' and set margins to page size */
+
+html {
+    /*overflow: hidden;*/
+    height: auto;
+    min-height: 100%;
+}
+
+body {
+	margin: 0;
+    height: auto;
+    min-height: 100%;
+}
+
+
+/** Heading Bar */
+
+.tablink {
+    background-color: rgb(102,117,127);
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 1% 1.25%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 125%;
+    width: 33.3333333333%;
+}
+
+.tablink:hover {
+    background-color: rgb(122,137,147);
+}
+
+
+/** Heading Section and Typed Style */
+
+.headingContainer {
+	position: relative;
+    line-height: 0;
+}
+
+.headingContainer img {
+    height: auto;
+    width: 100%;
+}
+
+.headingContainer .elWrapper {
+    top: 15%;
+    text-align: center;
+    color: white;
+    width: 100%;
+    position: absolute;
+    font-family: : 'Roboto', sans-serif;
+    font-size: 200%;
+}
+
+.typed-cursor {
+    color: white;
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+/** All Section Headings */
+
+.sectionHeading {
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 250%;
+    padding-top: 1%;
+    margin: 0;
+    text-align: center;
+}
+
+.sectionBar {
+    background-color: black;
+    margin: 0.25% 2% 0% 2%;
+    height: 2px;
+}
+
+/** About Section Style */
+
+.aboutDiv {
+    background-color: rgb(122,137,147);
+    overflow-y: auto;
+}
+
+.aboutPara {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 125%;
+    margin: 0;
+    padding: 2%;
+}
+
+.aboutContent img {
+    margin: 2% 2% 4% 2%;
+    float: right;
+    height: 10%;
+    width: 10%;
+}
+
+/** Projects section style */
+
+.projectsDiv {
+    background-color: rgb(142,157,167);
+}
+
+.projectsDiv p {
+    padding: 3% 60% 2% 2%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 125%;
+    margin: 0;
+}
+
+
+/** Contact section style */
+
+.contactDiv {
+    background-color: rgb(162,177,187);
+}
+
+.contactDiv p {
+    padding: 2%;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 125%;
+    margin: 0;
+}
+
+
+
+
+
+
