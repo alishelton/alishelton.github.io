@@ -17,7 +17,7 @@ body {
 
 /** Heading Bar */
 
-.tablink {
+.headingContainer .tablink {
     background-color: rgb(102,117,127);
     color: white;
     float: left;
@@ -84,7 +84,7 @@ body {
 /** All Section Headings */
 
 .sectionHeading {
-    color: black;
+    color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 250%;
     padding-top: 1%;
@@ -92,61 +92,81 @@ body {
     text-align: center;
 }
 
-.sectionBar {
+/*.sectionBar {
     background-color: black;
     margin: 0.25% 2% 0% 2%;
     height: 2px;
-}
+}*/
 
 /** About Section Style */
 
 .aboutDiv {
-    background-color: rgb(122,137,147);
+    background-color: rgb(130,190,210);
     overflow-y: auto;
+}
+
+.aboutContent {
+    margin: 0.25% 2% 2% 2%;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px; 
 }
 
 .aboutPara {
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 125%;
-    margin: 0;
     padding: 2%;
 }
 
-.aboutContent img {
+/*.aboutContent img {
     margin: 2% 2% 4% 2%;
     float: right;
     height: 10%;
     width: 10%;
-}
+}*/
 
 /** Projects section style */
 
 .projectsDiv {
-    background-color: rgb(142,157,167);
+    background-color: rgb(95,158,160);
+    overflow-y: auto;
 }
 
-.projectsDiv p {
-    padding: 3% 60% 2% 2%;
+.projectsContent {
+    margin: 0.25% 2% 2% 2%;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px; 
+}
+
+.projectText {
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 125%;
-    margin: 0;
+    padding: 2%;
 }
 
 
 /** Contact section style */
 
 .contactDiv {
-    background-color: rgb(162,177,187);
+    background-color: rgb(95,158,160);
+    overflow-y: auto;
 }
 
-.contactDiv p {
-    padding: 2%;
+.contactsContent {
+    margin: 0% 2% 2% 2%;
+    border-style: solid;
+    border-color: white;
+    border-width: 3px; 
+}
+
+.contactText {
     color: white;
     font-family: 'Roboto', sans-serif;
     font-size: 125%;
-    margin: 0;
+    padding: 2%;
 }
 
 
