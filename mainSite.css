@@ -88,19 +88,14 @@ body {
 /** All Section Headings */
 
 .sectionHeading {
-    color: rgb(230, 230, 230);
+    color: rgb(200, 200, 200);
     font-family: 'Roboto', sans-serif;
     font-size: 250%;
-    padding-top: 1%;
+    padding-top: 2%;
+    padding-left: 2%;
     margin: 0;
-    text-align: center;
+    text-align: left;
 }
-
-/*.sectionBar {
-    background-color: black;
-    margin: 0.25% 2% 0% 2%;
-    height: 2px;
-}*/
 
 /** About Section Style */
 
@@ -110,10 +105,11 @@ body {
 }
 
 .aboutPara {
-    color: white;
+    color: rgb(200, 200, 200);
     font-family: 'Roboto', sans-serif;
     font-size: 125%;
-    padding: 2%;
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 /** Contact section style */
@@ -123,46 +119,75 @@ body {
     overflow-y: auto;
 }
 
-/* Style all font awesome icons */
-.fa {
-    padding: 1%;
-    font-size: 100%;
-    width: 1%;
-    text-align: center;
-    text-decoration: none;
-    border-radius: 12.5%;
+/* Email form */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-/* Add a hover effect if you want */
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/* Add a background color and some padding around the form */
+.container {
+    padding: 2%;
+}
+
+
+/* Style all icons */
+.fa {
+    padding-left: 1%;
+    padding-bottom: 1%;
+    text-decoration: none;
+}
+
 .fa:hover {
     opacity: 0.7;
 }
 
-/* Set a specific color for each brand */
+.iconContent {
+    margin: 0;
+    padding-right: 0;
+}
 
 /* Facebook */
-.fa-facebook {
-    background: #3B5998;
-    color: white;
+.fa-facebook-square {
+    color: #3B5998;
 }
 
 /* Twitter */
-.fa-twitter {
-    background: #55ACEE;
-    color: white;
+.fa-twitter-square {
+    color: #55ACEE;
 }
 
 /* Github */
-.fa-github {
-    background: #222222;
-    color: white;
+.fa-github-square {
+    color: #222222;   
 }
 
 /* Linkedin */
-.fa-linkedin {
-    background: #007BB5;
-    color: white;
+.fa-linkedin-square {
+    color: #007BB5;
 }
+
 
 
 
