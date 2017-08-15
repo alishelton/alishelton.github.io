@@ -81,10 +81,14 @@ body {
     100% { opacity:1; }
 }
 
+.grad {
+
+}
+
 /** All Section Headings */
 
 .sectionHeading {
-    color: white;
+    color: rgb(230, 230, 230);
     font-family: 'Roboto', sans-serif;
     font-size: 250%;
     padding-top: 1%;
@@ -101,15 +105,8 @@ body {
 /** About Section Style */
 
 .aboutDiv {
-    background-color: rgb(130,190,210);
+    background-color: rgb(250,250,250);
     overflow-y: auto;
-}
-
-.aboutContent {
-    margin: 0.25% 2% 2% 2%;
-    border-style: solid;
-    border-color: white;
-    border-width: 3px; 
 }
 
 .aboutPara {
@@ -119,57 +116,53 @@ body {
     padding: 2%;
 }
 
-/*.aboutContent img {
-    margin: 2% 2% 4% 2%;
-    float: right;
-    height: 10%;
-    width: 10%;
-}*/
-
-/** Projects section style */
-
-.projectsDiv {
-    background-color: rgb(95,158,160);
-    overflow-y: auto;
-}
-
-.projectsContent {
-    margin: 0.25% 2% 2% 2%;
-    border-style: solid;
-    border-color: white;
-    border-width: 3px; 
-}
-
-.projectText {
-    color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 125%;
-    padding: 2%;
-}
-
-
 /** Contact section style */
 
 .contactDiv {
-    background-color: rgb(95,158,160);
+    background-color: rgb(250,250,250);
     overflow-y: auto;
 }
 
-.contactsContent {
-    margin: 0% 2% 2% 2%;
-    border-style: solid;
-    border-color: white;
-    border-width: 3px; 
+/* Style all font awesome icons */
+.fa {
+    padding: 1%;
+    font-size: 100%;
+    width: 1%;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 12.5%;
 }
 
-.contactText {
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+    background: #3B5998;
     color: white;
-    font-family: 'Roboto', sans-serif;
-    font-size: 125%;
-    padding: 2%;
 }
 
+/* Twitter */
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
 
+/* Github */
+.fa-github {
+    background: #222222;
+    color: white;
+}
+
+/* Linkedin */
+.fa-linkedin {
+    background: #007BB5;
+    color: white;
+}
 
 
 
