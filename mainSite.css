@@ -126,15 +126,26 @@ body {
 }
 
 /* Email form */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */  
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
+input[type=text], textarea {
+    width: 100%; 
+    padding: 0.5%; 
+    border-color: #ccc;
+    border-width: 2px;
+    border-radius: 4px; 
+    border-style: solid;
+    box-sizing: border-box; 
+    margin-top: 0.75%; 
+    margin-bottom: 1.5%;
+    color: rgb(180, 180, 180);
+    font-family: 'Roboto', sans-serif;
+    font-size: 125%;
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+input[type=text]::placeholder, textarea::placeholder {
+    color: rgba(180, 180, 180, 0.5);
+    font-family: 'Roboto', sans-serif;
+    font-size: 100%;
 }
 
 /* Style the submit button with a specific background color etc */
