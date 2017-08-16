@@ -19,7 +19,8 @@
 		});
 
 		$(document).ready(function() {
-			$("#moveToAbout").click(function() {
+			$("#moveToAbout").click(function(e) {
+				e.preventDefault();
 			    $('html, body').animate({
 			        scrollTop: $(".aboutDiv").offset().top
 			    }, 1000);
