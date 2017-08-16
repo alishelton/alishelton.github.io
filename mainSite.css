@@ -285,6 +285,7 @@ input[type=submit]:hover {
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
     font-size: 100%;
+    text-decoration: none;
     color: #8D66C7;
 }
 
