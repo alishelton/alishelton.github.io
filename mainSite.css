@@ -271,7 +271,7 @@ input[type=submit]:hover {
 }
 
 /* Resume */
-.resumeButton {
+#resumeButton {
     background-color: rgb(250, 250, 250);
     padding: 1% 2%;
     margin-right: 2%;
@@ -286,7 +286,7 @@ input[type=submit]:hover {
     color: #8D66C7;
 }
 
-.resumeButton:hover {
+#resumeButton:hover {
     background-color: #8D66C7;
     color: rgb(250, 250, 250);
 }

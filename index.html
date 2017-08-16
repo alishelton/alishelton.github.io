@@ -26,6 +26,32 @@
 			});
 		});
 
+		
+		$(document).ready(function() {
+		    $("#my-form").on("submit", function(e) {
+		    	e.preventDefault();
+		    	var fid = $("#subject").attr("id");
+		    	var name = $("#fname").val();
+		    	var email = $("#femail").val();
+		    	var message = $("#subject").val();
+
+		        $.ajax({
+		            url: "sendemail.php",
+		            method: "post",
+		            data: "fid=" + fid + "&name=" + name + "&email=" + email + "&mes=" + message,
+		            success: function() {
+		            	$("#fname").val("");
+		            	$("#femail").val("");
+		            	$("#subject").val("");
+		            }
+		        }).done(function(response) {
+		            alert(response);
+		        });
+
+		        return false;
+		    });
+		});
+
 	</script>
 
 	<body>
@@ -36,7 +62,7 @@
 				<p>My name is Ali Shelton, and I'm </p>
 			</div>
 			
-			<a href="#contactDiv" id="moveToAbout"><span></span><span></span><span></span>Scroll</a>
+			<a href="#aboutDiv" id="moveToAbout"><span></span><span></span><span></span>Scroll</a>
 
 			<div class="elWrapper">
 				<span class="element"></span>
@@ -56,13 +82,13 @@
 			<h1 class="sectionHeading">Contact</h1>
 
 			<div class="container">
-				<form action="sendemail.php">
+				<form id="my-form" method="post" action="sendemail.php">
 
 			    <label for="fname" class="formWord">Name</label>
 			    <input type="text" id="fname" name="firstname" placeholder="John Smith">
 
 			    <label for="femail" class="formWord">Email</label>
-			    <input type="text" id="femail" name="email" placeholder="john.smith@gmail.com">
+			    <input type="text" id="femail" name="email" placeholder="john.smith@email.com">
 
 			    <label for="subject" class="formWord">Subject</label>
 			    <textarea id="subject" name="subject" placeholder="Hey!" style="height:20%"></textarea>
@@ -77,7 +103,9 @@
 				<a target="_blank" href="https://twitter.com/ashelton_3" class="fa fa-twitter-square fa-3x"></a>
 				<a target="_blank" href="https://github.com/alishelton" class="fa fa-github-square fa-3x"></a>
 				<a target="_blank" href="https://www.linkedin.com/in/alishelton/" class="fa fa-linkedin-square fa-3x"></a>
-				<button class="resumeButton">Resume</button>
+				<form action="pdfhost.php">
+					<input type="submit" value="Resume" id=resumeButton>
+				</form>
 			</div>
 
 		</div>

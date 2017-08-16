@@ -1,21 +1,18 @@
-<?php
-       // from the form
-       $name = trim(strip_tags($_POST['fname']));
-       $email = trim(strip_tags($_POST['femail']));
-       $message = htmlentities($_POST['subject']);
+<?php 
+if(isset($_POST['submit'])){
+    $to = "shelton.ali1@gmail.com"; // this is your Email address
+    $from = $_POST['email']; // this is the sender's Email address
+    $first_name = $_POST['firstname'];
+    $subject = "Form submission";
+    $subject2 = "Copy of your form submission";
+    $message = $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['subject'];
 
-       // set here
-       $subject = "Contact form submitted!";
-       $to = 'shelton.ali1@gmail.com';
-
-       $body = <<<HTML
-$message
-HTML;
-
-       $headers = "From: $email\r\n";
-       $headers .= "Content-type: text/html\r\n";
-
-       // send the email
-       mail($to, $subject, $body, $headers);
-       header('Location: index.html');
+    $headers = "From:" . $from;
+    $headers2 = "From:" . $to;
+    mail($to,$subject,$message,$headers);
+    mail($from,$subject2,$message2,$headers2); // sends a copy of the message to the sender
+    echo "Mail Sent. Thank you " . $first_name . ", we will contact you shortly.";
+    // You can also use header('Location: thank_you.php'); to redirect to another page.
+    // You cannot use header and echo together. It's one or the other.
+    }
 ?>
