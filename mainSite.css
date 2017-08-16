@@ -12,6 +12,7 @@ body {
 	margin: 0;
     height: auto;
     min-height: 100%;
+    background-color: rgb(250, 250, 250)
 }
 
 /** Heading Section and Typed Style */
