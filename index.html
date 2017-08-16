@@ -3,9 +3,8 @@
 
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="mainSite.css">
-		<link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
-		<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+		<link rel="stylesheet" href="mainSite.css">		
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="typed.js-master/js/typed.js"></script>
@@ -14,24 +13,8 @@
 	<script>
 		$(function(){
 			$(".element").typed({
-				strings: ["Hi.", "I'm Ali.", "I'm a student and a developer.", "I enjoy learning languages and reading books.", "Wow, ^500 are you still reading this?", "I figured most people would've moved on by now.^500", "Well, ^1000 uh, ^1000 this is kinda awkward.^1000", "So, what do you like?", "...Right, ^1000 you can't respond.", "How about you shoot me a message from the contact section!", "Thanks for checking me out!", "Ali Shelton"],
+				strings: ["a developer.", "a student.^500", "a learner.^500", "a reader.^500", "a watcher.^500", "a person."],
 				typeSpeed: 1
-			});
-		});
-
-		$(document).ready(function() {
-			$("#about").click(function() {
-			    $('html, body').animate({
-			        scrollTop: $(".aboutDiv").offset().top
-			    }, 1000);
-			});
-		});
-
-		$(document).ready(function() {
-			$("#projects").click(function() {
-			    $('html, body').animate({
-			        scrollTop: $(".projectsDiv").offset().top
-			    }, 1000);
 			});
 		});
 
@@ -47,19 +30,17 @@
 
 	<body>
 		<div class = "headingContainer">
-			<button class="tablink" id="about">About</button>
-			<button class="tablink" id="projects">Projects</button>
-			<button class="tablink" id="contact">Contact</button>
-
-
 			<img src="bridge.JPG", alt="bridge">
+
+			<div class="name">
+				<p>My name is Ali Shelton, and I'm </p>
+			</div>
+			
+			<a href="#contactDiv" id="contact"><span></span><span></span><span></span>Scroll</a>
 
 			<div class="elWrapper">
 				<span class="element"></span>
 			</div>
-		</div>
-
-		<div class="grad">
 		</div>
 
 		<div class="aboutDiv">
@@ -70,7 +51,7 @@
 			</div>
 
 		</div>
-		<div class="contactDiv">
+		<div class="contactDiv" id="contactDiv">
 			<h1 class="sectionHeading">Contact</h1>
 
 			<div class="container">
@@ -98,7 +79,7 @@
 		</div>
 
 		<div>
-			<p class="watermark">Ali Shelton, 2017</p>
+			<p class="watermark">A.S. 2017</p>
 		</div>
 
 	</body>
