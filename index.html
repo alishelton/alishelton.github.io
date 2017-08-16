@@ -19,9 +19,9 @@
 		});
 
 		$(document).ready(function() {
-			$("#contact").click(function() {
+			$("#moveToAbout").click(function() {
 			    $('html, body').animate({
-			        scrollTop: $(".contactDiv").offset().top
+			        scrollTop: $(".aboutDiv").offset().top
 			    }, 1000);
 			});
 		});
@@ -36,7 +36,7 @@
 				<p>My name is Ali Shelton, and I'm </p>
 			</div>
 			
-			<a href="#contactDiv" id="contact"><span></span><span></span><span></span>Scroll</a>
+			<a href="#contactDiv" id="moveToAbout"><span></span><span></span><span></span>Scroll</a>
 
 			<div class="elWrapper">
 				<span class="element"></span>
@@ -51,14 +51,18 @@
 			</div>
 
 		</div>
-		<div class="contactDiv" id="contactDiv">
+		
+		<div class="contactDiv">
 			<h1 class="sectionHeading">Contact</h1>
 
 			<div class="container">
 				<form action="/action_page.php">
 
 			    <label for="fname" class="formWord">Name</label>
-			    <input type="text" id="fname" name="firstname" placeholder="Ali Shelton">
+			    <input type="text" id="fname" name="firstname" placeholder="John Smith">
+
+			    <label for="femail" class="formWord">Email</label>
+			    <input type="text" id="femail" name="email" placeholder="john.smith@gmail.com">
 
 			    <label for="subject" class="formWord">Subject</label>
 			    <textarea id="subject" name="subject" placeholder="Hey!" style="height:20%"></textarea>
