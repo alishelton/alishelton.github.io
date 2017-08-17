@@ -74,6 +74,7 @@ body {
     -webkit-transform: rotate(-45deg);
     transform: rotate(-45deg);
     -webkit-animation: sdb07 2s infinite;
+    -webkit-appearance: none;
     animation: sdb07 2s infinite;
     opacity: 0;
     box-sizing: border-box;
