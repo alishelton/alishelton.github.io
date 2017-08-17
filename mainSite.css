@@ -207,7 +207,7 @@ input[type=text], input[type=email], textarea {
     resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
-input[type=text]::placeholder, input[type=email], textarea::placeholder {
+input[type=text]::placeholder, input[type=email]::placeholder, textarea::placeholder {
     color: rgba(180, 180, 180, 0.5);
     font-family: 'Open Sans', sans-serif;
     font-size: 100%;
