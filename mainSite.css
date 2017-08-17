@@ -6,14 +6,12 @@ html {
     overflow-x: hidden;
     height: auto;
     min-height: 100%;
-    background-color: rgb(250, 250, 250);
 }
 
 body {
 	margin: 0;
     height: auto;
     min-height: 100%;
-    background-color: rgb(250, 250, 250);
 }
 
 /** Heading Section and Typed Style */
@@ -28,20 +26,24 @@ body {
 }
 
 /** Name header */
-.name {
+.topGroup {
     position: absolute;
     top: 8%;
-    padding-left: 28%;
+    text-align: center;
     font-family: 'Open Sans', sans-serif;
-    font-size: 200%; 
+    font-size: 2.5vw; 
     color: rgb(250, 250, 250);
+    left: 25%;
 }
 
+.topGroup p {
+    display: inline;
+}
 
 /** Scroll button */
 .headingContainer a {
     position: absolute;
-    top: 17%;
+    top: 14.5%;
     left: 47.5%;
     z-index: 2;
     display: inline-block;
@@ -49,11 +51,11 @@ body {
     transform: translate(0, -50%);
     color: rgb(250, 250, 250);
     font-family: "Open Sans", sans-serif;
-    font-size: 150%; 
+    font-size: 1.5vw; 
     letter-spacing: .1em;
     text-decoration: none;
     transition: opacity .3s;
-    padding-top: 5.5%;
+    padding-top: 5.7vw;
 }
 
 .headingContainer a:hover {
@@ -64,9 +66,9 @@ body {
     position: absolute;
     top: 0;
     left: 50%;
-    width: 24px;
-    height: 24px;
-    margin-left: -12px;
+    width: 1.8vw;
+    height: 1.8vw;
+    margin-left: -1vw;
     border-left: 1px solid rgb(250, 250, 250);
     border-bottom: 1px solid rgb(250, 250, 250);
     -webkit-transform: rotate(-45deg);
@@ -83,13 +85,13 @@ body {
 }
 
 .headingContainer a span:nth-of-type(2) {
-  top: 16px;
+  top: 1.2vw;
   -webkit-animation-delay: .15s;
   animation-delay: .15s;
 }
 
 .headingContainer a span:nth-of-type(3) {
-  top: 32px;
+  top: 2.4vw;
   -webkit-animation-delay: .3s;
   animation-delay: .3s;
 }
@@ -118,17 +120,8 @@ body {
   }
 }
 
-/** Typed content */
-.headingContainer .elWrapper {
-    top: 11%;
-    left: 60.8%;
-    color: rgb(250, 250, 250);
-    width: 100%;
-    position: absolute;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 200%;
-}
 
+/* Typed cursor */
 .typed-cursor {
     color: white;
     opacity: 1;
