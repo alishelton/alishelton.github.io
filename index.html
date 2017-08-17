@@ -31,10 +31,10 @@
 		$(document).ready(function() {
 		    $("#my-form").on("submit", function(e) {
 		    	e.preventDefault();
-		    	var fid = $("#subject").attr("id");
+		    	var fid = $("#body").attr("id");
 		    	var name = $("#fname").val();
 		    	var email = $("#femail").val();
-		    	var message = $("#subject").val();
+		    	var message = $("#body").val();
 
 		        $.ajax({
 		            url: "sendemail.php",
@@ -43,7 +43,7 @@
 		            success: function() {
 		            	$("#fname").val("");
 		            	$("#femail").val("");
-		            	$("#subject").val("");
+		            	$("#body").val("");
 		            }
 		        }).done(function(response) {
 		            alert(response);
@@ -83,7 +83,7 @@
 			<h1 class="sectionHeading">Contact</h1>
 
 			<div class="container">
-				<form id="my-form" method="post" action="sendemail.php">
+				<form id="my-form" method="post" action="http://formspree.io/shelton.ali1@gmail.com">
 
 			    <label for="fname" class="formWord">Name</label>
 			    <input type="text" id="fname" name="firstname" placeholder="John Smith">
@@ -92,11 +92,12 @@
 			    <input type="text" id="femail" name="email" placeholder="john.smith@email.com">
 
 			    <label for="subject" class="formWord">Subject</label>
-			    <textarea id="subject" name="subject" placeholder="Hey!" style="height:20%"></textarea>
+			    <textarea id="body" name="body" placeholder="Hey!" style="height:20%"></textarea>
 
 			    <input type="submit" value="Submit">
 
 			  </form>
+
 			</div>
 
 			<div class="iconContent">
