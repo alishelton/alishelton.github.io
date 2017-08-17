@@ -165,12 +165,12 @@ body {
 }
 
 /** About Section Style */
-.aboutDiv {
+.aboutDiv, .skillsDiv {
     background-color: rgb(250,250,250);
     overflow-y: auto;
 }
 
-.aboutPara {
+.aboutPara, .skillsPara {
     color: rgb(170, 170, 170);
     font-family: 'Open Sans', sans-serif;
     font-size: 125%;
