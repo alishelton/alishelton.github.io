@@ -149,7 +149,7 @@ body {
 
 /** All Section Headings */
 .sectionHeading {
-    color: rgb(170, 170, 170);
+    color: rgb(160, 160, 160);
     font-family: 'Open Sans', sans-serif;
     font-size: 250%;
     padding-top: 2%;
@@ -165,7 +165,7 @@ body {
 }
 
 .aboutPara, .skillsPara {
-    color: rgb(170, 170, 170);
+    color: rgb(160, 160, 160);
     font-family: 'Open Sans', sans-serif;
     font-size: 125%;
     padding-left: 2%;
@@ -179,7 +179,7 @@ body {
 }
 
 .formWord {
-    color: rgb(170, 170, 170);
+    color: rgb(160, 160, 160);
     font-family: 'Open Sans', sans-serif;
     font-size: 125%;
 }
