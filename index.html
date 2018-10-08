@@ -1,107 +1,22 @@
-<!DOCTYPE html>
 <html>
-
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="referrer" content="origin">
-		<link rel="stylesheet" href="mainSite.css">		
-		<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="typed.js-master/js/typed.js"></script>
+		<script type="text/javascript" src="js/three.js"></script>
+		<script type="text/javascript" src="js/environment.js"></script>
+		<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans" rel="stylesheet">
 	</head>
-
-	<script>
-		$(document).ready(function() {
-			$(".element").typed({
-				strings: ["a developer.", "a student.^500", "a thinker.^500", "just me."],
-				typeSpeed: 1
-			});
-		});
-
-		$(document).ready(function() {
-			$("#moveToAbout").click(function(e) {
-				e.preventDefault();
-			    $('html, body').animate({
-			        scrollTop: $(".aboutDiv").offset().top
-			    }, 1000);
-			});
-		});
-
-		$(document).ready(function(){
-    		$('html').animate({scrollTop:0}, 1);
-    		$('body').animate({scrollTop:0}, 1);
-		});
-
-	</script>
-
 	<body>
-		<div class = "headingContainer">
-			<img src="bridge.JPG", alt="bridge">
-
-			<div class="topGroup">	
-				<p>My name is Ali Shelton, and I'm </p>
-				<span class="element"></span>
-			</div>
-			
-			<a href="" id="moveToAbout"><span></span><span></span><span></span>Scroll</a>
-			
+		<div id="world">
 		</div>
-
-		<div class="aboutDiv">
-			<h1 class="sectionHeading">About Me</h1>
-
-			<div class="aboutContent">
-				<p class="aboutPara">I'm a student at UC Berkeley studying Computer Science. I enjoy reading (more recently Souseki, Murakami, and Tolkien) and learning Japanese. My current focus is on Machine Learning and Artificial Intelligence, but I also enjoy working on backend and mobile development. This past summer I worked in the Shepherd lab at UCSF on deep learning prediction of adolescent bone age, and last summer I worked as a mobile client development intern at VenueNext.</p>
+		<div id="wrapper">
+			<div id="name">
+				<h1>Ali Shelton</h1>
 			</div>
-
-		</div>
-
-		<div class="skillsDiv">
-			<h1 class="sectionHeading">Skills</h1>
-
-			<div class="aboutContent">
-				<p class="skillsPara">Languages: I'm fluent in Python and Java, and have worked with C, Swift, MIPS Assembly, MATLAB, CSS, HTML, and JavaScript</p>
-				<p class="skillsPara">Concepts: I'm familiar with artificial intelligence algorithms, data structures, and computer architecture</p>
+			<div id="links">
+				<a href="https://alishelton.github.io/resume">Resume</a>
+				<a href="https://www.linkedin.com/in/alishelton/">Linkedin</a>
+				<a href="https://github.com/alishelton">Github</a>
 			</div>
-			
 		</div>
-
-		<div class="contactDiv">
-			<h1 class="sectionHeading">Contact</h1>
-
-			<div class="container">
-				<form id="my-form" action="http://formspree.io/shelton.ali1@gmail.com" method="POST" >
-
-			    <label for="name" class="formWord">Name</label>
-			    <input type="text" name="name" placeholder="John Smith">
-
-			    <label for="_replyto" class="formWord">Email</label>
-			    <input type="email" name="_replyto" placeholder="john.smith@email.com">
-
-			    <label for="body" class="formWord">Subject</label>
-			    <textarea id="body" name="body" placeholder="Hey!" style="height:20%"></textarea>
-
-			    <input type="submit" value="Submit" class="submitButton">
-
-			  </form>
-
-			</div>
-
-			<div class="iconContent">
-				<a target="_blank" href="https://www.facebook.com/alilshelton" class="fa fa-facebook-square fa-3x"></a>
-				<a target="_blank" href="https://twitter.com/ashelton_3" class="fa fa-twitter-square fa-3x"></a>
-				<a target="_blank" href="https://github.com/alishelton" class="fa fa-github-square fa-3x"></a>
-				<a target="_blank" href="https://www.linkedin.com/in/alishelton/" class="fa fa-linkedin-square fa-3x"></a>
-				<a target="_blank" href="resume.pdf" id=resumeButton>Resume</a>
-			</div>
-
-		</div>
-
-		<div>
-			<p class="watermark">A.S. 2017</p>
-		</div>
-
 	</body>
-
-</html>	
+</html>
