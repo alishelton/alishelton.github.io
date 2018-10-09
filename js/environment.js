@@ -7,15 +7,6 @@ var colors = {
 	blue:0x68c3c0,
 };
 
-var gradients = {
-	night: [0x0F2027, 0x2C5364],
-	dawn: [0xF3904F, 0x3B4371],
-	morning: [0xFF5F6D, 0xFFC371],
-	noon: [0xE0EAFC, 0xCFDEF3],
-	evening: [0x005AA7, 0xFFFDE4],
-	dusk: [0x2C3E50, 0xFD746C]
-}
-
 window.addEventListener('load', init, false);
 
 function init() {
@@ -205,7 +196,7 @@ Sky = function() {
 		var c = new Cloud();
 
 		var a = stepAngle * i;
-		var h = WIDTH*1.2 + Math.random() * 150;
+		var h = HEIGHT * 2 + Math.random() * 150;
 
 		c.mesh.position.x = Math.cos(a) * h;
 		c.mesh.position.y = Math.sin(a) * h + (-75 + Math.random() * 150);
@@ -226,7 +217,7 @@ Sky = function() {
 var sky;
 function createSky() {
 	sky = new Sky();
-	sky.mesh.position.y = -1400;
+	sky.mesh.position.y = -HEIGHT * 1.5;
 	scene.add(sky.mesh);
 }
 
