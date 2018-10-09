@@ -197,6 +197,7 @@ Sky = function() {
 
 		var a = stepAngle * i;
 		var h = HEIGHT * 2 + Math.random() * 150;
+		// var h = Math.random() * 250;
 
 		c.mesh.position.x = Math.cos(a) * h;
 		c.mesh.position.y = Math.sin(a) * h + (-75 + Math.random() * 150);
@@ -217,7 +218,7 @@ Sky = function() {
 var sky;
 function createSky() {
 	sky = new Sky();
-	sky.mesh.position.y = -HEIGHT * 1.5;
+	sky.mesh.position.y = -HEIGHT * 2 + (HEIGHT * 0.8 / 2);
 	scene.add(sky.mesh);
 }
 
