@@ -217,7 +217,7 @@ Sky = function() {
 var sky;
 function createSky() {
 	sky = new Sky();
-	sky.mesh.position.y = -1000 - (HEIGHT * 0.8);
+	sky.mesh.position.y = -900 - (HEIGHT * 0.8);
 	scene.add(sky.mesh);
 }
 
